@@ -4,7 +4,10 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
-    remotePatterns: [{ hostname: "avatars.githubusercontent.com" }],
+    remotePatterns: [
+      { hostname: "avatars.githubusercontent.com" },
+      { hostname: "cdn.discordapp.com" },
+    ],
   },
 };
 
