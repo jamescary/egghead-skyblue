@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function DiscordButton() {
   const supabase = createClientComponentClient<Database>();
   const handleSignIn = async () => {
-    const response = await supabase.auth.signInWithOAuth({
+    const { data, error } = await supabase.auth.signInWithOAuth({
       provider: "discord",
       options: {
         redirectTo: `${location.origin}/auth/callback`,
