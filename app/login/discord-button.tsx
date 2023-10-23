@@ -12,6 +12,7 @@ export default function DiscordButton() {
         redirectTo: `${location.origin}/auth/callback`,
       },
     });
+    console.log(data, error);
   };
 
   return (
